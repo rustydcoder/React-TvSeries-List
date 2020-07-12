@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Loader from '../../components/Loader'
+import BackButton from '../../components/BackButton'
 
 class SingleSeries extends Component {
 state ={
@@ -23,6 +24,7 @@ componentDidMount() {
             {
                show !== null &&
                <div>
+                  <BackButton />
                   <p>Title: {show.name}</p>
                   <p>Premiered: {show.premiered}</p>
                   <p>Rating: {show.rating.average}</p>
